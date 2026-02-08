@@ -52,11 +52,25 @@ public class AutosprintClient implements ClientModInitializer {
 		if (client.player == null) {
 			return;
 		}
+
+		client.options.keySprint.setDown(false);
+
 		if (client.player.getFoodData().getFoodLevel() < MIN_FOOD_LEVEL_TO_SPRINT) {
 			client.player.setSprinting(false);
 			return;
 		}
+		if (client.options.keyDown.isDown()
+				|| client.options.keyLeft.isDown()
+				|| client.options.keyRight.isDown()) {
+			client.player.setSprinting(false);
+			return;
+		}
+		if (client.options.keyShift.isDown()) {
+			client.player.setSprinting(false);
+			return;
+		}
 		if (!client.options.keyUp.isDown()) {
+			client.player.setSprinting(false);
 			return;
 		}
 		client.player.setSprinting(true);

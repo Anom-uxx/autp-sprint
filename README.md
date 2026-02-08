@@ -2,6 +2,8 @@
 
 Auto-sprint fuer Minecraft 1.21.11 (Fabric). Der Spieler sprintet automatisch, solange die Mod aktiv ist und genug Hunger vorhanden ist.
 
+Kurzbeschreibung: Auto-sprint ist eine kleine Fabric-Mod, die das Sprinten automatisch steuert, per Hotkey umschaltbar ist und den Status im Spiel anzeigt.
+
 ## Funktionen
 - Hotkey zum Ein/Aus (Standard: Y)
 - Statusanzeige im Action Bar beim Umschalten (AN/AUS)
